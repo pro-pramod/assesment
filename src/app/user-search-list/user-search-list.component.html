@@ -1,0 +1,15 @@
+<div class="input-group mb-3"> 
+
+    <input type="text" (change)="onSearchChange()" [(ngModel)]="search"  name="search" class="form-control"> 
+
+</div>  
+
+ <select [(ngModel)]="filter"  (change)="onchangeFilter()" class="form-control" style='width: 200px;'> 
+
+    <option selected>Select Status</option> 
+
+    <option value="Active">Active</option> 
+
+    <option value="Inactive">Inactive</option> 
+
+ </select> 

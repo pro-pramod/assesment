@@ -1,0 +1,32 @@
+
+
+<app-user-search-list  (emitSearch)="onSearch($event)"></app-user-search-list>
+<table class="table"> 
+
+    <thead> 
+
+      <tr> 
+
+        <th>Name</th> 
+
+         <th>Email</th> 
+
+         <th>Phone</th> 
+
+        <th>Status</th> 
+
+      </tr> 
+
+    </thead> 
+
+    <tbody> 
+
+      <tr *ngFor="let user of userData;">
+        <td>{{user.name}}</td>
+        <td>{{ user.email }}</td>
+        <td>{{ user.phone }}</td>
+        <td>{{ user.status }}</td>
+      </tr>
+
+    </tbody> 
+</table>
